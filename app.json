@@ -1,0 +1,50 @@
+{
+    "name": "Def Bot",
+    "description": "Get Definition on any word",
+    "logo": "https://telegra.ph/file/7d1c3fdd5e83c4bbda3ad.jpg",
+    "keywords": [
+        "charindith",
+        "Def Bot",
+        "Telegram Bot"
+    ],
+    "repository": "https://github.com/jaindu/DefBot",
+    "success_url": "https://t.me/charindith",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+        "OXFORD_APP_ID": {
+            "description": "get it from developer.oxforddictionaries.com",
+            "value": ""
+        },
+        "OXFORD_APP_KEY": {
+            "description": "get it from developer.oxforddictionaries.com",
+            "value": ""
+        },
+        "LANGUAGE": {
+            "description": "Language",
+            "value": "en-gb"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
