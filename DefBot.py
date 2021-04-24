@@ -86,7 +86,7 @@ async def corona(event):
 
 @bot.on(events.NewMessage(pattern='/help'))
 async def help(event):
-    await event.respond('Send any word and get the definition\n<a=https://github.com/jaindu/DefBot>Source</a>\nBy @charindith')
+    await event.respond('Send any word and get the definition\n<a=https://github.com/jaindu/DefBot>Source</a>\nBy @charindith',parse_mode='html')
     raise events.StopPropagation
 
 print('bot start')
