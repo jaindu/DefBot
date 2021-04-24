@@ -68,6 +68,7 @@ bot = TelegramClient('bot',ID,HASH).start(bot_token=BOT_TOKEN)
 @bot.on(events.NewMessage(pattern='/start'))
 async def start(event):
     await event.reply('Hi, Send me any word and I will give you the Def')
+
     raise events.StopPropagation    
 
 @bot.on(events.NewMessage())
@@ -85,7 +86,7 @@ async def corona(event):
 
 @bot.on(events.NewMessage(pattern='/help'))
 async def help(event):
-    await event.respond('Send any word and get the definition')
+    await event.respond('Send any word and get the definition\n<a=https://github.com/jaindu/DefBot>Source</a>\nBy @charindith')
     raise events.StopPropagation
 
 print('bot start')
